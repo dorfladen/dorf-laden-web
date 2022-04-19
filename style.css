@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+[class*="col-"]{
+    margin: 0;
+}
+
+
+/* Re-usable Utiity Classes  */
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+.padded    { padding: 4%;    }
+
+.padded-1,
+.grid.padded-1 { padding: 1rem; }
+
+.padded-2,
+.grid.padded-2 { padding: 2rem; }
+
+.margin-b-0 { margin-bottom: 0; }
+
+
+.bg-light    { background-color: #F8F6F4; }
+.bg-featured { background-color: #018ca2; }
+
+.text-featured { color: #f59186;} 
+.text-md{font-size: 1.4rem;}
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+
+
+
+
+
+
+/* Typography styles*/
+
+.bold-text{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.style-text{
+    border: 1vw solid white;
+}
+
+
+
+
+/*Images styles*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.logo{
+    background-image: url('/images/Screenshot\ 2022-04-16\ at\ 7.47.06.png');
+    min-height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.story{
+    background-image: url('/images/green-chameleon-s9CC2SKySJM-unsplash\(1\)\(1\).jpg');
+    min-height:25vh;
+    padding-bottom:30%;
+    border: 1vw solid white;
+}
+
+
+
+/*Link styles*/
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+nav{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.08em;;
+}
+
+nav a{
+    padding: 0.5rem 1.5rem;
+}
+
+nav a:hover{
+    color: lightgray;
+    font-size: 1.4rem;
+    transition: 0.2s;
+}
+
+.next{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.next:hover{
+    color: lightgray;
+    font-size: 3.5rem;
+}
+
+            
+              
+.hover-container {
+    background-size: cover;
+    background-position: center;
+}
+  
+.hover-overlay {
+    position: relative;
+    padding-bottom: 100%;
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+    transition: all 0.3s;
+}
+  
+.hover-overlay:hover {
+    background-color: rgba(60, 60, 60, 0.7);
+    color: white;
+}
+  
+.hover-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+.hover-inner p {
+    margin-bottom: 0;
+}
+  
+              
+            
+
+section{
+    padding: 4%;
+}
+
+
+header,
+footer{
+    background-color: #FEF9FB;
+  
+    
+}
+
+p{
+    font-size: 1.25rem;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+}
+
+
+
+footer h2{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
