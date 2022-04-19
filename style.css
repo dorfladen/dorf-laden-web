@@ -25,11 +25,15 @@ body{
 
 .padded-1,
 .grid.padded-1 { padding: 1rem; }
+.padded-left-0{
+    padding-left: 0;
+}
 
 .padded-2,
 .grid.padded-2 { padding: 2rem; }
 
 .margin-b-0 { margin-bottom: 0; }
+.margin-b-1 { margin-bottom: 1rem; }
 
 
 .bg-light    { background-color: #F8F6F4; }
@@ -42,7 +46,24 @@ body{
 .center { text-align: center; }
 .right  { text-align: right; }
 
-
+.portrait-tall{
+    padding-bottom: 175%;
+  }
+  
+  .portrait{
+    padding-bottom: 125%;}
+  
+  .square{
+    padding-bottom: 100%;
+  }
+  
+  .landscape{
+    padding-bottom: 66%;
+  }
+  
+  .landscape-wide{
+    padding-bottom: 56%;
+  }
 
 
 
@@ -91,7 +112,17 @@ body{
     border: 1vw solid white;
 }
 
-
+.bg-img-1{
+    background-image: url('https://source.unsplash.com/hr3a-VnCIYY');
+ }
+ 
+ .bg-img-2{
+    background-image: url('https://source.unsplash.com/QOQAyLXongo');
+ }
+ 
+ .bg-img-3{
+    background-image: url('https://source.unsplash.com/1ZHOvZAoIDs');
+ }
 
 /*Link styles*/
 
@@ -162,7 +193,52 @@ nav a:hover{
     margin-bottom: 0;
 }
   
-              
+form input, form textarea{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid gray;
+    /*this will override the blue outline upon hovering or clicking*/
+    outline: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  /* sets the outlien to teal when its being focuse --> clicked on/written in*/
+  form input:focus, form textarea:focus{
+    border-color: #CF9D99;
+  }
+  
+  textarea{
+    min-height: 5rem;
+  }
+  
+  form label{
+    margin-top: 1rem;
+    display: block;
+    color: #86868a;
+    font-weight: bold;
+  }
+  
+  form button{
+    background-color: #86868a;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.1em;
+    margin: 0.5 0;
+  }
+
+  form button:hover{
+      background-color: white;
+      color: #CF9D99;
+      border: 1px solid #CF9D99;
+      transition: 0.2s;
+   
+  }      
+  
+  form a{
+      display: block;
+  }
             
 
 section{
@@ -178,10 +254,10 @@ footer,
     
 }
 
-p{
+p, li, span, .contact{
     font-size: 1.25rem;
     line-height: 1.35;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 
@@ -192,3 +268,9 @@ footer h2{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+li{
+    margin-bottom: 1.2rem;
+}
+
+

@@ -16,8 +16,53 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Zen+Maru+Gothic:wght@300;400&display=swap" rel="stylesheet">
     
+           <!-- Fontawsome -->
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 		<!-- My own custom stylesheet -->
 		<link rel="stylesheet" href="/style.css"> 
     </head>
-    <body></body>
+    <body>
+
+		<header class="grid-spaceAround">
+            <div class="logo bg-image col-8"></div>
+
+        </header>
+          
+        <section class="grid menu">
+            <nav class="center col-12">
+                <a href="/index.html"> Home </a>
+                <a href="/uber-uns.html"> Über uns </a>
+                <a href="/Dorfladen.html"> Dorfladen </a>
+                <a href="/cafe.html"> Cafe </a>
+                <a href="/Kontakt.html"> Kontakt </a>
+                <a href="/Impressum.html"> Impressum </a>
+             </nav>
+       </section>
+
+       <section id="contactme" class="grid-spaceBetween padded">
+        <div class="col-12-middle center bold-text">Kontakt</div>
+        <form class="col-7_sm-12"
+        action="https://formspree.io/f/myyonpbd"
+        method="POST">
+        <label for="_name">Name</label>
+        <input type="text" name="_name" id="_name" placeholder="Dein Name"/>
+        <label for="_replyto">Email</label>
+        <input type="email" name="_replyto" placeholder="Deine email Adresse"/>
+        <label for="message"> Nachricht</label>
+        <textarea name="message" id="message" placeholder="Deine Nachricht"></textarea>
+        <button type="submit"> SUBMIT </button> 
+        </form>
+        <div class="col-4_sm-12 padded-t-1">
+            <div><a href="#" target="_blank"> <i class="fab fa-facebook-f padded-1 padded-left-0 contact"></i><span>Dorfladen Eisenheim</span></a> <br>
+            <a class="margin-b-1 contact" href=“mailto:info@dorfladen-eisenheim.de“> info@dorfladen-eisenheim.de </a> <br>
+            <a class="margin-b-1 contact" href=tel:+490938697580> +49 09386 97 580  </a>
+            <p class="margin-b-1"> Hertleinsbergweg 2<br> Eisenheim<br> 97247 <br> Deutschland</p>
+            </div>
+        </div>
+    </section>
+
+
+
+	</body>
 </html>
