@@ -82,6 +82,15 @@ body{
     border: 1vw solid white;
 }
 
+.footer-text{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Tangerine';
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom:0;
+}
+
 
 
 
@@ -192,6 +201,7 @@ nav a:hover{
 .hover-inner p {
     margin-bottom: 0;
 }
+
   
 form input, form textarea{
     width: 100%;

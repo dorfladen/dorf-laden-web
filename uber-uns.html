@@ -15,12 +15,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Zen+Maru+Gothic:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
     
 		<!-- My own custom stylesheet -->
 		<link rel="stylesheet" href="/style.css"> 
     </head>
     <body>
-		<header class="grid-spaceAround">
+		<header id="header" class="grid-spaceAround">
             <div class="logo bg-image col-8"></div>
 
         </header>
@@ -39,7 +42,7 @@
 		 <section class="grid">
             <h2 class="col-12 bold-text center">Über uns</h2>
             <p class="col-12 center text-md">Lange hat's gedauert. Nun ist es endlich soweit. </p>
-            <a class="col-12 next" href="#story"> &#x2193;</a>
+            <a class="col-12 next" href="#team"> &#x2193;</a>
         </section>
 
 		<!---------------------------------news------------------------------------->
@@ -55,7 +58,7 @@
 
 		            
               
-<section class="padded center">
+<section id="team" class="padded center">
 	<h2> Meet the team </h2>
 	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 	<div class="grid padded-1">
@@ -112,7 +115,11 @@
 
 	  </section>
 
-
+	  <footer class="grid center">
+		<div class="col-12-bottom">
+		   <a href="#header"> <p class="footer-text">Dorfladen mit Cafe</p></a>
+		</div>
+	</footer>
 
 
 	</body>
