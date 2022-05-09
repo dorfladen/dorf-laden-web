@@ -1,51 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <!------- This is the head of the HTML for linking external resources & metadata ------->
-    <head>
-    	<!-- The title for SEO & browser tabs -->
-		<title>Dorfladen Obereisenheim</title>
+--- 
+layout: default
+---
 
-		<!-- Viewport meta tag -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-		<!-- Gridlex -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    
-		<!-- Add Google Fonts Here  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Zen+Maru+Gothic:wght@300;400&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
-    
-		<!-- My own custom stylesheet -->
-		<link rel="stylesheet" href="/style.css"> 
-    </head>
-    <body>
-                 
+
+<body>        
               
-        <header id="header" class="grid-spaceAround">
-            <div class="logo bg-image col-8"></div>
-
-        </header>
+       
           
-        <section class="grid menu">
-            <nav class="center col-12">
-                <a href="/index.html"> Home </a>
-                <a href="/uber-uns.html"> Über uns </a>
-                <a href="/Dorfladen.html"> Dorfladen </a>
-                <a href="/cafe.html"> Cafe </a>
-                <a href="/Kontakt.html"> Kontakt </a>
-                <a href="/Impressum.html"> Impressum </a>
-             </nav>
-       </section>
+       
 <!-------------------------------------------Wir freuen uns---------------------->       
        <section class="grid">
-        <h2 class="col-12 bold-text center">Willkommen im Eisenheimer Dorfladen</h2>
-        <p class="col-12 center text-md">Wir freuen uns, dass du den Weg zu uns gefunden hast. Wir möchten dir hier unseren Dorfladen, unser Café, unsere Lieferanten und unser Team vorstellen. Natürlich findest du hier auch immer unsere aktuellen Angebote, brandheiße News, sowie offene Stellenangebote.  </p>
-        <a class="col-12 next" href="#unser"> &#x2193;</a>
-    </section>
+            <h2 class="col-12 bold-text center">Willkommen im Eisenheimer Dorfladen</h2>
+            <p class="col-12 center text-md">Wir freuen uns, dass du den Weg zu uns gefunden hast. Wir möchten dir hier unseren Dorfladen, unser Café, unsere Lieferanten und unser Team vorstellen. Natürlich findest du hier auch immer unsere aktuellen Angebote, brandheiße News, sowie offene Stellenangebote.  </p>
+        </section>
 <!------------------------------------------Unser Dorfladen---------------------------->
         <section id="unser" class="grid">
             <h2 class="col-12 bold-text center">Unser Dorfladen</h2>
@@ -53,54 +20,51 @@
             <a class="col-12 next" href="#story"> &#x2193;</a>
         </section>
 <!-----------------------------------------------The story------------------------------>
-        <section id="story" class="grid tall-150">
-            <div class="col-4-top">
-                <div class="bg-image story"></div>
-                <p class="story-text">
+    <section id="story" class="grid tall-200">
+        <div class="col-4-top">
+            <div class="bg-image story square"></div>
+            <p class="story-text">
                     Lange hat's gedauert.
                     Bereits im Jahr 2012 wurde über einen Dorfladen diskutiert. Das Projekt sollte ins Rollen kommen. Die ganze Gemeinde Eisenheim wurde mit ins Boot geholt. Anteile wurden gezeichnet. Pläne wurden gemacht. Die Vorfreude war riesig. 
+            </p>
+        </div>
+        <div class="col-4-middle">
+            <div class="bg-image story square"></div>
+                <p class="story-text">
+                    Doch dann kamen unaufhaltsam Hürden auf uns zu, die zeitweise kaum zu überwinden schienen. Exorbitante Baupreise, Bürokratieland Deutschland, Corona, usw. Viele sahen das Projekt Dorfladen längst gescheitert, doch wir gaben nicht auf. Wir können es deshalb kaum glauben, dass wir am 14.05.2022 endlich unseren Dorfladen am Wengert mit Café eröffnen dürfen. 
                 </p>
-            </div>
-                <div class="col-4-middle">
-                    <div class="bg-image story"></div>
-                    <p class="story-text">
-                        Lange hat's gedauert.
-                        Bereits im Jahr 2012 wurde über einen Dorfladen diskutiert. Das Projekt sollte ins Rollen kommen. Die ganze Gemeinde Eisenheim wurde mit ins Boot geholt. Anteile wurden gezeichnet. Pläne wurden gemacht. Die Vorfreude war riesig. 
-                    </p>
-                </div>
-                <div class="col-4-bottom">
-                    <div class="bg-image story"></div>
-                    <p class="story-text">
-                        Lange hat's gedauert.
-                        Bereits im Jahr 2012 wurde über einen Dorfladen diskutiert. Das Projekt sollte ins Rollen kommen. Die ganze Gemeinde Eisenheim wurde mit ins Boot geholt. Anteile wurden gezeichnet. Pläne wurden gemacht. Die Vorfreude war riesig. 
-                    </p>
-                </div>
-            <a class="col-12 next" href="#map"> &#x2193;</a>
-        </section>
-<!---------------------------------------Map----------------------------------------->
-<section id="map" class="grid padded">
-    <div class="col-6_sm-12">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.420342995598!2d115.12927631440583!3d-8.651511390396642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23879eae0a51f%3A0x6b09725f69f19992!2sThe+Shady+Shack!5e0!3m2!1sen!2sid!4v1560581894985!5m2!1sen!2sid"
-      width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div class="col-6_sm-12-middle padded">
-      <h2> Wo Sie uns finden </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p> <strong> Email: </strong> hello@company.com </p>
-      <p> <strong> Phone: </strong> 0412 555 555 </p>
-      <p> <strong> Facebook: </strong> fb.com/companyname </p>
-    </div>
-</section>
+        </div>
+        
 
-<!---------------------------------------Footer----------------------------------------->
-<footer class="grid center">
-    <div class="col-12-bottom">
-       <a href="#header"> <p class="footer-text">Dorfladen mit Cafe</p></a>
-    </div>
-</footer>
+        <div class="col-4-bottom">
+                    <div class="bg-image story square"></div>
+                    <p class="story-text">
+                        Ein Projekt, das unsere Gemeinde umfassend, nachhaltig und regional mit Produkten versorgen soll. Durch unser Café möchten wir außerdem einen Ort zum Verweilen und Zusammenkommen schaffen. Nette Gespräche, Kaffee und Leckereien. 
+                        </p>
+        </div>
+    </section>
+    <section class="grid center">
+        <a class="col-12 next" href="#map"> &#x2193;</a>
+    </section>
+<!---------------------------------------Map----------------------------------------->
+    <section id="map" class="grid padded">
+        <div class="col-6_sm-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.420342995598!2d115.12927631440583!3d-8.651511390396642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23879eae0a51f%3A0x6b09725f69f19992!2sThe+Shady+Shack!5e0!3m2!1sen!2sid!4v1560581894985!5m2!1sen!2sid"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-6_sm-12-middle padded">
+            <h2> Wo Sie uns finden </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p> <strong> Email: </strong> hello@company.com </p>
+            <p> <strong> Phone: </strong> 0412 555 555 </p>
+            <p> <strong> Facebook: </strong> fb.com/companyname </p>
+        </div>
+    </section>
+
+
+    
   
                 
               
     
-    </body>
-</html>
+</body>

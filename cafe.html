@@ -1,83 +1,63 @@
-<!DOCTYPE html>
-<html>
-    <!------- This is the head of the HTML for linking external resources & metadata ------->
-    <head>
-    	<!-- The title for SEO & browser tabs -->
-		<title>Dorfladen Obereisenheim</title>
+---
+layout: default
+gallery:
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/image1.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/image1.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/image1.jpg
+  - column-size: col-12
+    aspect-ratio: landscape
+    background_image: /images/image1.jpg
+  - column-size: col-6
+    aspect-ratio: landscape
+    background_image: /images/image1.jpg
+  - column-size: col-6
+    aspect-ratio: landscape
+    background_image: /images/image1.jpg
+---
 
-		<!-- Viewport meta tag -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-		<!-- Gridlex -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    
-		<!-- Add Google Fonts Here  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Zen+Maru+Gothic:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
-    
-		<!-- My own custom stylesheet -->
-		<link rel="stylesheet" href="/style.css"> 
-    </head>
-    <body>
+<body>
 
-		<header id="header" class="grid-spaceAround">
-            <div class="logo bg-image col-8"></div>
-
-        </header>
+		
           
-        <section class="grid menu">
-            <nav class="center col-12">
-                <a href="/index.html"> Home </a>
-                <a href="/uber-uns.html"> Über uns </a>
-                <a href="/Dorfladen.html"> Dorfladen </a>
-                <a href="/cafe.html"> Cafe </a>
-                <a href="/Kontakt.html"> Kontakt </a>
-                <a href="/Impressum.html"> Impressum </a>
-             </nav>
-       </section>
+        
 
-       <section class="grid">
+    <section class="grid">
         <h2 class="col-12 bold-text center">Café</h2>
         <p class="col-12 center text-md">In unserem gemütlichen Café mit großer Terrasse kannst du es dir so richtig gemütlich machen. Genieße ein leckeres Frühstück mit Freunden, ein Stück Kuchen oder trink einen guten Schluck Frankenwein und lass die Seele baumeln.  </p>
-        <a class="col-12 next" href="#gallery-c"> &#x2193;</a>
     </section>
 
-
-    <section id="gallery-c">
-        <h2 class="center bold-text">So sieht's aus</h2>
-        <div class="gallery grid">
-            <div class="col-6">
-              <div class="bg-image bg-img-1 portrait"></div>
-            </div>
-            <div class="col-6">
-              <div class="bg-image bg-img-2 portrait"></div>
-            </div>
-            <div class="col-4_xs-12">
-              <div class="bg-image bg-img-3 square"></div>
-            </div>
-            <div class="col-4_xs-12">
-              <div class="bg-image bg-img-3 square"></div>
-            </div>
-            <div class="col-4_xs-12">
-              <div class="bg-image bg-img-3 square"></div>
-            </div>
-            <div class="col-12">
-              <div class="bg-image bg-img-4 landscape"></div>
-            </div>
-            
-          </div>
-    </section>
-
-    <footer class="grid center">
-      <div class="col-12-bottom">
-         <a href="#header"> <p class="footer-text">Dorfladen mit Cafe</p></a>
+    <section class="padded">
+      <div class="gallery grid center" id="lightgallery-2">
+        <a class="button m-side-50" href="/images/image2.jpg">
+            Menu 
+        </a> 
+        <a href="/images/image2.jpg"></a>
       </div>
-  </footer>
+    </section>
 
+    <section class="padded">
+      <h2 class="center bold-text" id="gallery-c">So sieht's aus</h2>
+      <div class="gallery grid" id="lightgallery">
+        {% for item in page.gallery %}
+      
+          <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+            <div class="bg-image {{item.aspect-ratio}}" 
+                style="background-image: url('{{item.background_image}}');">
+            </div>
+          </a> 
+      
+        {% endfor %}
+      </div>
+    </section>
+
+   
+   
 	</body>
 
 </html>
