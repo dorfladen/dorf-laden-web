@@ -8,3 +8,7 @@ lightGallery(document.getElementById('lightgallery-2'), {
     download: false
 });
 
+$('.hamburger-button').click(function(){
+    $('.mobile-menu').fadeToggle(100);
+    $(this).toggleClass('active');
+});
