@@ -51,18 +51,20 @@ gallery:
     </section>
 
     <section class="padded">
-      <h2 class="center bold-text" id="gallery-c">So sieht's aus</h2>
-      <div class="gallery grid" id="lightgallery">
-        {% for item in page.gallery %}
-      
-          <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
-            <div class="bg-image {{item.aspect-ratio}}" 
-                style="background-image: url('{{item.background_image}}');">
-            </div>
-          </a> 
-      
-        {% endfor %}
-      </div>
+      <div class="capped-width m-l-center m-r-center">
+        <h2 class="center bold-text" id="gallery-c">So sieht's aus</h2>
+        <div class="gallery grid" id="lightgallery">
+          {% for item in page.gallery %}
+        
+            <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+              <div class="bg-image {{item.aspect-ratio}}" 
+                  style="background-image: url('{{item.background_image}}');">
+              </div>
+            </a> 
+        
+          {% endfor %}
+        </div>
+    </div>
     </section>
 
    

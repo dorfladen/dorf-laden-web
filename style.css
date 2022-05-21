@@ -6,6 +6,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color:#fde7c5;
+    color: #535E6C;
 }
 
 
@@ -28,6 +30,7 @@ img{
 
 
 .padded    { padding: 4%;    }
+.margin-b-2{margin-bottom: 2rem;}
 
 .padded-1,
 .grid.padded-1 { padding: 1rem; }
@@ -35,15 +38,25 @@ img{
     padding-left: 0;
 }
 
+.padded-t-5{
+    padding-top: 5rem;
+}
+.p-l-9{padding-left: 9rem;}
+.p-b-1{padding-bottom: 1rem;}
+.p-b-2{padding-bottom: 2rem;}
+
 .m-side-50{
     margin: 0 45%;
 }
+.m-t--1{margin-top: -1.2rem;}
 
 .padded-2,
 .grid.padded-2 { padding: 2rem; }
 
 .margin-b-0 { margin-bottom: 0; }
 .margin-b-1 { margin-bottom: 1rem; }
+.m-l-center{margin-left:auto;}
+.m-r-center{margin-right:auto;}
 
 
 .bg-light    { background-color: #F8F6F4; }
@@ -84,13 +97,16 @@ img{
 }
 
 .lg-backdrop {
-    background-color: rgb(20,20,20);
+    background-color: #2E3740 ;
 }
 
 .lg-backdrop.in {
-    opacity: 0.65;
+    opacity: 0.95;
 }
 
+.capped-width{
+    max-width: 1000px;
+}
 
 
 /* Typography styles*/
@@ -106,6 +122,13 @@ img{
     border: 1vw solid white;
 }
 
+
+.header-text{
+    font-family: 'Tangerine';
+    font-size: 8rem;
+    padding-bottom: 1rem;
+}
+
 .footer-text{
     font-size: 2rem;
     font-weight: bold;
@@ -115,11 +138,29 @@ img{
     padding-bottom:0;
 }
 
+.uberuns-text{font-size:2rem;}
+
+
 p:last-child{
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
+.bigger{
+    font-size: 2rem;
+}
+
+#map a,
+#contactme a{
+    font-size: 1.25rem;
+    line-height: 1.35;
+    margin-bottom: 0.8rem;
+}
+
+#map a:hover,
+#contactme a:hover{
+    color: #fece8a;
+}
 
 
 
@@ -143,23 +184,25 @@ p:last-child{
 }
 
 .story{
-    background-image: url('/images/image1.jpg');
     min-height:25vh;
-    border: 1vw solid white;
+    border: 1vw solid #FEE7C5;
 }
 
-.bg-img-1{
-    background-image: url('https://source.unsplash.com/hr3a-VnCIYY');
- }
- 
- .bg-img-2{
-    background-image: url('https://source.unsplash.com/QOQAyLXongo');
- }
- 
- .bg-img-3{
-    background-image: url('https://source.unsplash.com/1ZHOvZAoIDs');
+.bg-impressum{
+    background-image: url('/images/impressum.jpg');
+}
+
+ .bg-plan{
+     background-image: url('/images/plan.jpg');
  }
 
+ .bg-zweite{
+     background-image: url('/images/zweite.jpg');
+ }
+
+ .bg-laden-01{
+     background-image: url('/images/laden-01.jpg');
+ }
 /*Link styles*/
 
 a{
@@ -172,6 +215,7 @@ nav{
     font-family: 'Zen Maru Gothic', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 1.1rem;
     letter-spacing: 0.08em;;
 }
 
@@ -180,19 +224,18 @@ nav a{
 }
 
 nav a:hover{
-    color: lightgray;
+    color: #fece8a;
     font-size: 1.4rem;
     transition: 0.2s;
 }
 
 .next{
-    color: black;
     font-size: 3rem;
     text-align: center;
 }
 
 .next:hover{
-    color: lightgray;
+    color: #fece8a;
     font-size: 3.5rem;
 }
 
@@ -234,7 +277,7 @@ form input, form textarea{
     width: 100%;
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border: 2px solid gray;
+    border: 2px solid #545E6C;
     /*this will override the blue outline upon hovering or clicking*/
     outline: none;
     font-family: inherit;
@@ -242,7 +285,7 @@ form input, form textarea{
   }
   /* sets the outlien to teal when its being focuse --> clicked on/written in*/
   form input:focus, form textarea:focus{
-    border-color: #CF9D99;
+    border-color: #FECD89;
   }
   
   textarea{
@@ -257,7 +300,7 @@ form input, form textarea{
   }
   
   form button{
-    background-color: #86868a;
+    background-color: #545E6C;
     color: white;
     border: none;
     padding: 0.5rem 2rem;
@@ -267,8 +310,8 @@ form input, form textarea{
 
   form button:hover{
       background-color: white;
-      color: #CF9D99;
-      border: 1px solid #CF9D99;
+      color: #545E6C;
+      border: 2px solid #FECD89;
       transition: 0.2s;
    
   }      
@@ -284,7 +327,7 @@ section{
 
 
 .button{
-    border: 1px solid green;
+    border: 1px solid #535D6B;
     border-radius: 10rem;
     padding: 2rem;
     text-align: center;
@@ -295,22 +338,25 @@ section{
 }
 
 .button:hover{
-    background-color: green;
-    color: white;
+    background-color: #535D6B;
+    color: #FEE7C5;
     transform: 0.4s;
 }
 
 
 .clickedon{
-    color: red;
+    color: #fece8a;
 }
 
 
 header,
 footer,
 .menu{
-    background-color: #FEF9FB;
-  
+    background-image: url('/images/background-h-f.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
     
 }
 
@@ -321,12 +367,12 @@ p, li, span, .contact{
 }
 
 
-
 footer h2{
+    
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 400;
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    padding-bottom: 4rem;
 }
 
 li{
@@ -349,6 +395,6 @@ li{
 }
 
 #contactme{
-    color: black;
+    color: #535E6C;
 }
 

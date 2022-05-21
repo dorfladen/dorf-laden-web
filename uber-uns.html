@@ -1,17 +1,44 @@
 ---
 layout: default
+team:
+ - photo: /images/das-team1.jpg
+   name: Simone
+   size: col-4_sm-12
+ - photo: /images/das-team2.jpg
+   name: Gaby
+   size: col-4_sm-12
+ - photo: /images/das-team3.jpg
+   name: Gaby
+   size: col-4_sm-12
+ - photo: /images/das-team4.jpg
+   name: Gaby
+   size: col-4_sm-12
+ - photo: /images/das-team5.jpg
+   name: Gaby
+   size: col-4_sm-12
+ - photo: /images/das-team6.jpg
+   name: Gaby
+   size: col-4_sm-12
+ - photo: /images/das-team7.jpg
+   name: Gaby
+   size: col-4_sm-12
+ - photo: /images/das-team8.jpg
+   name: Gaby
+   size: col-4_sm-12
+ - photo: /images/das-team9.jpg
+   name: Gaby
+   size: col-4_sm-12
 ---
 
-<body>
 		
           
         
 
-		 <section class="grid">
-            <h2 class="col-12 bold-text center">Über uns</h2>
-            <p class="col-12 center text-md">Lange hat's gedauert. Nun ist es endlich soweit. </p>
-            <a class="col-12 next" href="#team"> &#x2193;</a>
-        </section>
+<section class="grid">
+	<h2 class="col-12 bold-text center">Über uns</h2>
+	<p class="col-12 center text-md">Lange hat's gedauert. Nun ist es endlich soweit. </p>
+	<a class="col-12 next" href="#team"> &#x2193;</a>
+ </section>
 
 		<!---------------------------------news------------------------------------->
 
@@ -26,44 +53,26 @@ layout: default
 
 		            
               
-<section id="team" class="padded center">
-	<h2> Meet the team </h2>
-	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-	<div class="grid padded-1">
-	  <div class="col-4_sm-12 padded-1">
-		<div class="hover-container" style="background-image:url('/images/headshot-3.png')">
-		  <div class="hover-overlay">
-			<div class="hover-inner">
-			  <h3> Joe </h3>
-			  <p> Co-founder
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<div class="col-4_sm-12 padded-1">
-		  <div class="hover-container" style="background-image:url('/images/headshot-2.png')">
+<section id="team" class="padded center grid">
+	<h2 class="col-12 bigger p-b-2"> Das Team </h2>
+	<p class="col-12"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+	
+	{%for member in page.team%}
+		<div class="{{member.size}} padded-1">
+		  <div class="hover-container" style="background-image:url('{{member.photo}}')">
 			<div class="hover-overlay">
 			  <div class="hover-inner">
-				<h3> Suzie </h3>
-				<p> Developer </p>
+				<h3 class="uberuns-text"> {{member.name}} </h3>
 			  </div>
 			</div>
 		  </div>
 		</div>
-		<div class="col-4_sm-12 padded-1">
-		  <div class="hover-container" style="background-image:url('/images/headshot-1.png')">
-			<div class="hover-overlay">
-			  <div class="hover-inner">
-				<h3> Angie </h3>
-				<p> Admin </p>
-			  </div>
-			</div>
-		  </div>
-		</div>
+	{%endfor%}
   
-	  </section>
+</section>
   
-			  
+	
+	  
 			
 
 
@@ -71,7 +80,7 @@ layout: default
 
 		<!-----------------------------offene stellenangebote--------------------------->
 
-	  <section class="center grid">
+	<section class="center grid">
 		<h2 class="bold-text col-12">Wir suchen dich!</h2>
 		<div class="col-2"></div>
 		<div class="col-8">
@@ -84,11 +93,6 @@ layout: default
 		<p>Wenn du interesse hast, Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque incidunt, quam numquam dicta enim ducimus magnam quis, ad quibusdam rerum repellendus sequi odio, ut dolorum molestias rem non nisi delectus.</p>
 		</div>
 		<div class="col-2"></div>
-	  </section>
+	</section>
 
 	  
-
-
-	</body>
-
-</html>
