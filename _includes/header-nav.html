@@ -3,42 +3,39 @@
     	<a class="hamburger-button mob-show"> &#9776; </a>
   	</div> -->
     <nav class="center col-12 mob-hide">
-        <a 
-            {% if page.url == "/" %}
-                class="clickedon"
+        <a {% if page.url == "/" %}
+            class="clickedon"
             {%endif%}
-        
-        href="/"> Home </a>
+            href="/"> Home </a>
+
         <a 
         {% if page.url == "/uber-uns.html" %}
         class="clickedon"
         {%endif%}
-        
         href="/uber-uns.html"> Über uns </a>
+
         <a 
         {% if page.url == "/dorfladen.html" %}
         class="clickedon"
         {%endif%}
-        
         href="/dorfladen.html"> Dorfladen </a>
+
         <a 
         {% if page.url == "/cafe.html" %}
         class="clickedon"
         {%endif%}
-        
-        
         href="/cafe.html"> Cafe </a>
+
         <a 
         {% if page.url == "/kontakt.html" %}
         class="clickedon"
         {%endif%}
-        
         href="/kontakt.html"> Kontakt </a>
+
         <a 
         {% if page.url == "/impressum.html" %}
         class="clickedon"
         {%endif%}
-        
         href="/impressum.html"> Impressum </a>
      </nav>
 
