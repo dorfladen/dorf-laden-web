@@ -310,13 +310,14 @@ form input, form textarea{
     padding: 0.5rem 2rem;
     letter-spacing: 0.1em;
     margin: 0.5 0;
+    transition: 0.2s;
   }
 
   form button:hover{
       background-color: white;
       color: #545E6C;
       border: 2px solid #FECD89;
-      transition: 0.2s;
+      
    
   }      
   
