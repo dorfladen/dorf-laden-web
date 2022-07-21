@@ -276,6 +276,13 @@ nav a:hover{
     margin-bottom: 0;
 }
 
+.copyright{
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    padding-top: 1rem;
+}
+
+
   
 form input, form textarea{
     width: 100%;
