@@ -11,7 +11,7 @@ body{
 }
 
 
-[class*="col-"]{
+[class*="grid-"], [class*="grid_"], [class~="grid"]{
     margin: 0;
 }
 
