@@ -20,6 +20,7 @@ img{
 }
 
 /* Re-usable Utiity Classes  */
+.tall-30 { min-height: 30vh; }
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
@@ -27,6 +28,9 @@ img{
 .tall-90 { min-height: 90vh; }
 .tall-100 { min-height: 100vh; }
 .tall-200 { min-height: 200vh; }
+
+.max-h-100 {max-height: 100vh;
+width: auto;}
 
 
 .padded    { padding: 4%;    }
@@ -206,6 +210,10 @@ p:last-child{
 
  .bg-laden-01{
      background-image: url('/images/laden-01.jpg');
+ }
+
+ .bg-werbung{
+     background-image: url('/images/199-101.jpg');
  }
 /*Link styles*/
 
