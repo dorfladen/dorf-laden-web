@@ -1,5 +1,8 @@
 --- 
 layout: default
+angebots:
+ - angebot_image: dezember1.jpg
+ - angebot_image: dezember2.jpg
 ---
 
 
@@ -10,36 +13,38 @@ layout: default
        
 <!-------------------------------------------Wir freuen uns---------------------->       
        <section class="grid">
-            <h2 class="col-12 bold-text center">Willkommen im Eisenheimer Dorfladen</h2>
-            <p class="col-12 center text-md">Wir freuen uns, dass du den Weg zu uns gefunden hast. Wir möchten dir hier unseren Dorfladen, unser Café, unsere Lieferanten und unser Team vorstellen. Natürlich findest du hier auch immer unsere aktuellen Angebote, brandheiße News, sowie offene Stellenangebote.  </p>
+            <h2 class="col-12 bold-text center editable">Willkommen im Eisenheimer Dorfladen</h2>
+            <p class="col-12 center text-md editable">Wir freuen uns, dass du den Weg zu uns gefunden hast. Wir möchten dir hier unseren Dorfladen, unser Café, unsere Lieferanten und unser Team vorstellen. Natürlich findest du hier auch immer unsere aktuellen Angebote, brandheiße News, sowie offene Stellenangebote.  </p>
         </section>
 
         <section class="grid-center center">
+            {%for item in page.angebots%}
             <div class="col-6_sm-12">
-               <img class="max-h-100" src="/images/dezember1.jpg">
+               <img class="max-h-100" src="/images/{{item.angebot_image}}">
             </div>
-            <div class="col-6_sm-12">
+            {%endfor%}
+            <!-- <div class="col-6_sm-12">
                 <img class="max-h-100" src="/images/dezember2.jpg">
-             </div>
+             </div> -->
           </section>
 <!------------------------------------------Unser Dorfladen---------------------------->
         <section id="unser" class="grid">
-            <h2 class="col-12 bold-text center">Unser Dorfladen</h2>
-            <p class="col-12 center text-md">Lange hat's gedauert. Nun ist es endlich soweit. </p>
+            <h2 class="col-12 bold-text center editable">Unser Dorfladen</h2>
+            <p class="col-12 center text-md editable">Lange hat's gedauert. Nun ist es endlich soweit. </p>
             <a class="col-12 next" href="#story"> &#x2193;</a>
         </section>
 <!-----------------------------------------------The story------------------------------>
     <section id="story" class="grid tall-200">
         <div class="col-4_sm-12-top">
             <div class="bg-image story square margin-b-2 bg-plan"></div>
-            <p class="story-text">
+            <p class="story-text editable">
                     Lange hat's gedauert.
                     Bereits im Jahr 2012 wurde über einen Dorfladen diskutiert. Das Projekt sollte ins Rollen kommen. Die ganze Gemeinde Eisenheim wurde mit ins Boot geholt. Anteile wurden gezeichnet. Pläne wurden gemacht. Die Vorfreude war riesig. 
             </p>
         </div>
         <div class="col-4_sm-12-middle">
             <div class="bg-image story square margin-b-2 bg-zweite"></div>
-                <p class="story-text">
+                <p class="story-text editable">
                     Doch dann kamen unaufhaltsam Hürden auf uns zu, die zeitweise kaum zu überwinden schienen. Exorbitante Baupreise, Bürokratieland Deutschland, Corona, usw. Viele sahen das Projekt Dorfladen längst gescheitert, doch wir gaben nicht auf. Wir können es deshalb kaum glauben, dass wir am 14.05.2022 endlich unseren Dorfladen am Wengert mit Café eröffnen dürften. 
                 </p>
         </div>
@@ -47,7 +52,7 @@ layout: default
 
         <div class="col-4_sm-12-bottom">
                     <div class="bg-image story square margin-b-2 bg-laden-01"></div>
-                    <p class="story-text">
+                    <p class="story-text editable">
                         Ein Projekt, das unsere Gemeinde umfassend, nachhaltig und regional mit Produkten versorgen soll. Durch unser Café möchten wir außerdem einen Ort zum Verweilen und Zusammenkommen schaffen. Nette Gespräche, Kaffee und Leckereien. 
                         </p>
         </div>
@@ -61,8 +66,8 @@ layout: default
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.4131234225697!2d10.175032650957887!3d49.89104683529375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a28b3903c70db7%3A0x9d1fb0a1f2896bdd!2sDorfladen%20mit%20Caf%C3%A9%20am%20Wengert!5e0!3m2!1sen!2sde!4v1653117783317!5m2!1sen!2sde"
             width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <div class="col-6_sm-12-middle padded p-l-9">
-            <h2 class="p-b-1 bigger"> Wo du uns findest </h2>
+        <div class="col-6_sm-12-middle padded p-l-9 editable">
+            <h2 class="p-b-1 bigger editable"> Wo du uns findest </h2>
             <p> Hertleinsbergweg 2 <br> 97247 Eisenheim </p>
             <p><strong> Email: </strong> <a href="mailto:info@dorfladen-eisenheim.de"> info@dorfladen-eisenheim.de </a></p>
             <p> <strong> Phone: </strong><a href="tel:+4993869797580"> +49 9386 9797 580 </a></p>

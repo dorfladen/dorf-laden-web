@@ -1,28 +1,28 @@
 ---
 layout: default
 team:
- - photo: /images/das-team1.jpg
+ - photo_image: /images/das-team1.jpg
    name: Simone
    size: col-4_sm-12
- - photo: /images/das-team2.jpg
+ - photo_image: /images/das-team2.jpg
    name: Gaby
    size: col-4_sm-12
- - photo: /images/das-team5.jpg
+ - photo_image: /images/das-team5.jpg
    name: Christine
    size: col-4_sm-12
- - photo: /images/das-team8.jpg
+ - photo_image: /images/das-team8.jpg
    name: Ilonka
    size: col-4_sm-12
- - photo: /images/das-team4.jpg
+ - photo_image: /images/das-team4.jpg
    name: Inge
    size: col-4_sm-12
- - photo: /images/das-team7.jpg
+ - photo_image: /images/das-team7.jpg
    name: Julitta
    size: col-4_sm-12
- - photo: /images/das-team9.jpg
+ - photo_image: /images/das-team9.jpg
    name: Sabine
    size: col-4_sm-12
- - photo: /images/das-team10.jpg
+ - photo_image: /images/das-team10.jpg
    name: Margit
    size: col-4_sm-12
 ---
@@ -32,8 +32,8 @@ team:
         
 
 <section class="grid">
-	<h2 class="col-12 bold-text center">Über uns</h2>
-	<p class="col-12 center text-md">Lange hat's gedauert. Nun ist es endlich soweit. </p>
+	<h2 class="col-12 bold-text center editable">Über uns</h2>
+	<p class="col-12 center text-md editable">Lange hat's gedauert. Nun ist es endlich soweit. </p>
 	<a class="col-12 next" href="#team"> &#x2193;</a>
  </section>
 
@@ -51,11 +51,11 @@ team:
 		            
               
 <section id="team" class="padded center grid">
-	<h2 class="col-12 bigger p-b-2"> Das Team </h2>
+	<h2 class="col-12 bigger p-b-2 editable"> Das Team </h2>
 	
 	{%for member in page.team%}
 		<div class="{{member.size}} padded-1">
-		  <div class="hover-container" style="background-image:url('{{member.photo}}')">
+		  <div class="hover-container" style="background-image:url('{{member.photo_image}}')">
 			<div class="hover-overlay">
 			  <div class="hover-inner">
 				<h3 class="uberuns-text"> {{member.name}} </h3>
