@@ -20,7 +20,6 @@ gallery:
     aspect-ratio: square
     background_image: /images/dorfladen7.jpg
 ---
-
 <body>
 
 		
@@ -29,7 +28,9 @@ gallery:
 
     <section id="unser" class="grid">
         <h2 class="col-12 bold-text center editable">Supermarkt</h2>
-        <p class="col-12 center text-md editable">Wir wollen mehr sein als ein Supermarkt. Wir möchten unsere beiden Ortsteile, alle umliegenden Dörfer und unsere Gäste von weither miteinander verbinden.  </p>
+        <p class="col-12 center text-md editable">
+            Wir wollen mehr sein als ein Supermarkt.<br />Wir wollen auch mit regionalen Produkten punkten - sei es ein Balsamico-Essig vom Winzer, fränkische Äpfel, Kartoffeln und Kürbisse oder Honig von glücklichen Eisenheimer Bienen (und vieles mehr).&nbsp;<br />Und wir möchten unsere beiden Ortsteile, alle umliegenden Dörfer und unsere Gäste von weither miteinander verbinden.<br />Mehr dazu unter dem Stichwort Café.
+        </p>
     </section>
 
     {%include hours.html%}
@@ -41,8 +42,7 @@ gallery:
           {% for item in page.gallery %}
         
             <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
-              <div class="bg-image {{item.aspect-ratio}}" 
-                  style="background-image: url('{{item.background_image}}');">
+              <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
               </div>
             </a> 
         
